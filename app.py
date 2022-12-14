@@ -51,7 +51,7 @@ def create_item():
 
     item_id = uuid.uuid4().hex
     item = {**item_data, "id": item_id}
-    item[item_id] = item
+    items[item_id] = item
     return item, 201
 
 
